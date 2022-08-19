@@ -1,3 +1,11 @@
+//players' names
+var playerOne = prompt("Write your name:");
+var playerTwo = prompt("Write your name:");screen
+
+//transfering prompts to h1
+document.getElementById("playerOne").innerHTML=playerOne;
+document.getElementById("playerTwo").innerHTML=playerTwo;
+
 //Reload the game
 function refreshPage(){
     //random numbers
@@ -21,9 +29,9 @@ image2.setAttribute("src", imageSourceTwo);
 
 //Displays who won the game
 if(numberOne > numberTwo) {
-    document.querySelector("h1").innerText= "Player 1 wins!";
+    document.querySelector("h1").innerText= playerOne + " wins!";
 } else if(numberOne < numberTwo) {
-    document.querySelector("h1").innerText= "Player 2 wins!";
+    document.querySelector("h1").innerText= playerTwo + " wins!";
 } else {
     document.querySelector("h1").innerText="Draw!";
 }
