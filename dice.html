@@ -10,21 +10,30 @@
   <body>
 
     <div class="container">
-      <h1>Let's play</h1>
+      <h1>Let's have fun!</h1>
       
       <div class="dice">
         <p id="playerOne"></p>
+        <p id="scoreOne"></p>
         <img class="img1" src="images/dice1.jpeg">
       </div>
 
       <div class="dice">
-        <p>Try agian</p>
+        <div id="rollTheDice">
+          <p>Roll the dice</p>
         <button type="button" onClick="refreshPage()"></button>
+        </div>
+        
       </div>
 
       <div class="dice">
         <p id="playerTwo"></p>
+        <p id="scoreTwo"></p>
         <img class="img2" src="images/dice6.jpeg">
+      </div>
+      <div id="refreshDiv">
+        <p>Start new game</p>
+        <button type="button" onClick="refresh()"></button>"
       </div>
 
     </div>

@@ -16,8 +16,8 @@ button {
   width:44px;
   height:44px;
   bottom:85px;
-  margin-top: 80px;
-  margin-bottom:88px;
+  margin-top: 60px;
+  margin-bottom:10px;
   border-radius: 22px;
   border: 2px solid red;
   
@@ -35,7 +35,7 @@ img {
 }
 
 footer {
-  margin-top: 5%;
+  margin-top: 1%;
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
@@ -53,4 +53,12 @@ footer {
   display: inline-block;
   justify-content: center;
 
+}
+
+#refreshDiv {
+  visibility:hidden;
+}
+
+#rollTheDice {
+  visibility:visible;
 }
