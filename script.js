@@ -1,6 +1,6 @@
 //players' names
 var playerOne = prompt("Write your name:");
-var playerTwo = prompt("Write your name:");screen
+var playerTwo = prompt("Write your name:");
 
 //transfering prompts to h1
 document.getElementById("playerOne").innerHTML=playerOne;
@@ -10,15 +10,15 @@ document.getElementById("playerTwo").innerHTML=playerTwo;
 var scoreOne=0;
 var scoreTwo=0;
 
-//applying score lets to p elements
+//applying score vars to p elements
 document.getElementById("scoreOne").innerHTML=scoreOne;
 document.getElementById("scoreTwo").innerHTML=scoreTwo;
 
-//divw with buttons
+//divs with buttons
 const refreshBtn=document.getElementById("refreshDiv");
 const rollTheDice=document.getElementById("rollTheDice");
 
-//Reload the game
+//Roll the dice
 function refreshPage(){
     //random numbers
 var numberOne=Math.floor(Math.random()*6)+1;
@@ -41,16 +41,16 @@ image2.setAttribute("src", imageSourceTwo);
 
 //Displays who won the game
 if(numberOne > numberTwo) {
-    document.querySelector("h1").innerText= "A point for " + playerOne;
+    document.querySelector("h1").innerText= "One point for " + playerOne;
     document.getElementById("scoreOne").innerHTML=scoreOne=scoreOne+1;
 } else if(numberOne < numberTwo) {
-    document.querySelector("h1").innerText= "A point for " + playerTwo;
+    document.querySelector("h1").innerText= "One point for " + playerTwo;
     document.getElementById("scoreTwo").innerHTML=scoreTwo=scoreTwo+1;
 } else {
     document.querySelector("h1").innerText="Draw!";
 }
 
-//Displaying who is the winner
+//Displaying who the winner is
 if(scoreOne === 10) {
     document.querySelector("h1").innerText=playerOne + " is a winner!";
     //exchange buttons
